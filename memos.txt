@@ -1,0 +1,7 @@
+[msys]
+pushd C:/msys/home/kbuchi/WS_Programming_msys
+
+pushd ~
+pushd WS_Programming_msys/D-1
+make
+

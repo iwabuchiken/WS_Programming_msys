@@ -8,6 +8,7 @@ RM := del
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include D-2/subdir.mk
 -include D-1/subdir.mk
 -include subdir.mk
 -include objects.mk
@@ -29,7 +30,7 @@ all: WS_Programming_msys
 WS_Programming_msys: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MinGW C Linker'
-	gcc -L"C:\msys\local\lib" -o "WS_Programming_msys" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "WS_Programming_msys" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
